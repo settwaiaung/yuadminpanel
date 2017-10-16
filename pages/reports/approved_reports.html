@@ -17,19 +17,19 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
-   folder instead of downloading all of them to reduce the load. -->
-   <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+  folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
 
-   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+  <![endif]-->
 
-<!-- Google Font -->
-<link rel="stylesheet"
-href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <!-- Google Font -->
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
   <div class="wrapper">
@@ -329,25 +329,56 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
     <!-- /.search form -->
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">MAIN NAVIGATION</li>
-        <li>
-          <a href="../../index.html">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-          </a>
-        </li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-table"></i> <span>User List</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="admin_list.html"><i class="fa fa-circle-o"></i>Admin List</a></li>
-            <li><a href="user_list.html"><i class="fa fa-circle-o"></i>User List</a></li>
-          </ul>
-        </li>
-      </ul>
+      <li class="header">MAIN NAVIGATION</li>
+      <li>
+        <a href="index.html">
+          <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+        </a>
+      </li>
+      <li class="treeview">
+        <a href="#">
+          <i class="fa fa-list"></i> <span>Contributors</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+        <li><a href="../../pages/contributors/admin_list.html"><i class="fa fa-circle-o"></i>Admin List</a></li>
+          <li><a href="../../pages/contributors/user_list.html"><i class="fa fa-circle-o"></i>User List</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../../pages/roles/roles_edit.html">
+          <i class="fa fa-dashboard"></i> <span>Roles</span>
+        </a>
+      </li>
+      <li class="treeview">
+        <a href="#">
+          <i class="fa fa-comments-o"></i> <span>Reports</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="pending_reports.html"><i class="fa fa-circle-o"></i>Pending Reports</a></li>
+          <li><a href="approved_reports.html"><i class="fa fa-circle-o"></i>Approved Reports</a></li>
+          <li><a href="restore_reports.html"><i class="fa fa-circle-o"></i>Restore Reports</a></li>
+        </ul>
+      </li>
+      <li class="treeview">
+        <a href="#">
+          <i class="fa fa-file-word-o"></i> <span>Aritcles</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="../../pages/articles/pending_articles.html"><i class="fa fa-circle-o"></i>Pending Articles</a></li>
+          <li><a href="../../pages/articles/approved_articles.html"><i class="fa fa-circle-o"></i>Approved Articles</a></li>
+          <li><a href="../../pages/articles/restore_articles.html"><i class="fa fa-circle-o"></i>Restore Articles</a></li>
+        </ul>
+      </li>
+    </ul>
   </section>
   <!-- /.sidebar -->
 </aside>
@@ -373,7 +404,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
         <div class="box">
           <!-- /.box-header -->
           <div class="box-body">
-            <table id="approved_reports" class="table table-bordered table-hover">
+            <table id="restore_reports" class="table table-bordered table-hover">
               <thead>
                 <tr>
                   <th>Id</th>
@@ -390,15 +421,14 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                   <td>H1N1 OUTBREAK!!!!</td>
                   <td>Hla Hla</td>
                   <td>2017-05-12 16:40"</td>
-                  <td><button type = "button" class = "btn btn-success btn-xs">Restore</button></td>
                   <td><button type = "button" class = "btn btn-danger btn-xs">Delete</button></td>
+
                 </tr>
                 <tr>
                   <td>2</td>
                   <td>Dog Attack!!!!</td>
                   <td>Mya Mya</td>
                   <td>2017-05-18 16:50</td>
-                  <td><button type = "button" class = "btn btn-success btn-xs">Restore</button></td>
                   <td><button type = "button" class = "btn btn-danger btn-xs">Delete</button></td>
                 </tr>
                 <tr>
@@ -406,7 +436,6 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                   <td>Unpatient Teaching!!!!</td>
                   <td>Kaung Kaung</td>
                   <td>2017-05-21 23:0"</td>
-                  <td><button type = "button" class = "btn btn-success btn-xs">Restore</button></td>
                   <td><button type = "button" class = "btn btn-danger btn-xs">Delete</button></td>
                 </tr>
                 
@@ -626,30 +655,30 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
 </aside>
 <!-- /.control-sidebar -->
   <!-- Add the sidebar's background. This div must be placed
-   immediately after the control sidebar -->
-   <div class="control-sidebar-bg"></div>
- </div>
- <!-- ./wrapper -->
+  immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
 
- <!-- jQuery 3 -->
- <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
- <!-- Bootstrap 3.3.7 -->
- <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
- <!-- DataTables -->
- <script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
- <script src="../../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
- <!-- SlimScroll -->
- <script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
- <!-- FastClick -->
- <script src="../../bower_components/fastclick/lib/fastclick.js"></script>
- <!-- AdminLTE App -->
- <script src="../../dist/js/adminlte.min.js"></script>
- <!-- AdminLTE for demo purposes -->
- <script src="../../dist/js/demo.js"></script>
- <!-- page script -->
- <script>
+<!-- jQuery 3 -->
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- page script -->
+<script>
   $(function () {
-    $('#approved_reports').DataTable({
+    $('#restore_reports').DataTable({
       'paging'      : true,
       'lengthChange': false,
       'searching'   : false,
