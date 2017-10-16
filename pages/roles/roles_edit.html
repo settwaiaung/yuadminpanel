@@ -362,6 +362,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
         <ul class="treeview-menu">
           <li><a href="../../pages/reports/pending_reports.html"><i class="fa fa-circle-o"></i>Panding Reports</a></li>
           <li><a href="../../pages/reports/approved_reports.html"><i class="fa fa-circle-o"></i>Approved Reports</a></li>
+          <li><a href="../../pages/reports/restore_reports.html"><i class="fa fa-circle-o"></i>Restore Reports</a></li>
         </ul>
       </li>
       <li class="treeview">
@@ -372,8 +373,9 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="../../pages/articles/pending_articles.html"><i class="fa fa-circle-o"></i>Panding Reports</a></li>
-          <li><a href="../../pages/articles/approved_articles.html"><i class="fa fa-circle-o"></i>Approved Reports</a></li>
+          <li><a href="../../pages/articles/pending_articles.html"><i class="fa fa-circle-o"></i>Panding Articles</a></li>
+          <li><a href="../../pages/articles/approved_articles.html"><i class="fa fa-circle-o"></i>Approved Articles</a></li>
+          <li><a href="../../pages/articles/restore_articles.html"><i class="fa fa-circle-o"></i>Restore Articles</a></li>
         </ul>
       </li>
     </ul>
@@ -401,6 +403,50 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
       <div class="col-xs-12">
         <div class="box">
           <div class="box-header">
+            <h3 class="box-title">Create Role</h3>
+            <div class="box-body">
+              <table class="table table-bordered">
+                <tbody>
+                  <form class="form-inline">
+                    <tr>
+                      <td>
+                        Role
+                      </td>
+                      <td><input type="email" class="form-control" id="InputRole" placeholder="Role name"></td>
+                    </tr>
+                    <tr>
+                      <td>Permission</td>
+                      <td>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id="inlineCheckboxEdit" value="edit"> edit
+                        </label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id="inlineCheckboxView" value="view"> view
+                        </label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id="inlineCheckboxDelete" value="delete"> delete
+                        </label>
+                        <label class="checkbox-inline">
+                          <input type="checkbox" id="inlineCheckboxCreate" value="create"> view
+                        </label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><button type="submit" class="btn btn-primary">Create</button></td>
+                    </tr>
+                  </form>
+                </tbody>
+              </table>
+            </div><!-- /.box-body -->
+          </div><!-- /.box-header -->
+        </div><!-- /.box -->
+      </div><!-- /.col-xs-12 -->
+    </div><!-- /.row -->
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="box">
+          <div class="box-header">
             <h3 class="box-title">Editing Roles</h3>
           </div>
           <!-- /.box-header -->
@@ -413,6 +459,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                   <th>Name</th>
                   <th>Permissions</th>
                   <th>Created at</th>
+                  <th></th>
                   <th></th>
                 </tr>
               </thead>
@@ -436,10 +483,8 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                     </label>
                   </td>
                   <td>2017-10-15 06:59:48</td>
-                  <td>
-                    <a href="#" class="btn btn-primary btn-xs">Update</a>
-                    <a href="#" class="btn btn-danger btn-xs">Delete</a>
-                  </td>
+                  <td><a href="#" class="btn btn-primary btn-xs">Update</a></td>
+                  <td><a href="#" class="btn btn-danger btn-xs">Delete</a></td>
                 </tr>
                 <tr>
                   <td>2</td>
@@ -460,10 +505,8 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                     </label>
                   </td>
                   <td>2018-10-25 09:59:48</td>
-                  <td>
-                    <a href="#" class="btn btn-primary btn-xs">Update</a>
-                    <a href="#" class="btn btn-danger btn-xs">Delete</a>
-                  </td>
+                  <td><a href="#" class="btn btn-primary btn-xs">Update</a></td>
+                  <td><a href="#" class="btn btn-danger btn-xs">Delete</a></td>
                 </tr>
               </tbody>
             </table>
