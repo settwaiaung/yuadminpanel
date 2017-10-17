@@ -404,13 +404,14 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
         <div class="box">
           <!-- /.box-header -->
           <div class="box-body">
-            <table id="restore_reports" class="table table-bordered table-hover">
+            <table id="approved_reports" class="table table-bordered table-hover">
               <thead>
                 <tr>
                   <th>Id</th>
                   <th>Report's Title</th>
                   <th>Reporter</th>
                   <th>Report Uploaded Time</th>
+                  <th></th>
                   <th></th>
                 </tr>
               </thead>
@@ -420,6 +421,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                   <td>H1N1 OUTBREAK!!!!</td>
                   <td>Hla Hla</td>
                   <td>2017-05-12 16:40"</td>
+                  <td><button type = "button" class = "btn btn-success btn-xs">Restore</button></td>
                   <td><button type = "button" class = "btn btn-danger btn-xs">Delete</button></td>
                 </tr>
                 <tr>
@@ -427,6 +429,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                   <td>Dog Attack!!!!</td>
                   <td>Mya Mya</td>
                   <td>2017-05-18 16:50</td>
+                  <td><button type = "button" class = "btn btn-success btn-xs">Restore</button></td>
                   <td><button type = "button" class = "btn btn-danger btn-xs">Delete</button></td>
                 </tr>
                 <tr>
@@ -434,8 +437,10 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                   <td>Unpatient Teaching!!!!</td>
                   <td>Kaung Kaung</td>
                   <td>2017-05-21 23:0"</td>
+                  <td><button type = "button" class = "btn btn-success btn-xs">Restore</button></td>
                   <td><button type = "button" class = "btn btn-danger btn-xs">Delete</button></td>
                 </tr>
+                
               </tbody>
             </table>
           </div>
@@ -675,7 +680,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
  <!-- page script -->
  <script>
   $(function () {
-    $('#restore_reports').DataTable({
+    $('#approved_reports').DataTable({
       'paging'      : true,
       'lengthChange': false,
       'searching'   : false,
