@@ -711,22 +711,8 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
 <!-- page script -->
 <script>
   $(function () {
-    $('#pending_reports').DataTable({
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : false,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : false
-    })
-    $('#guest_table').DataTable({
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : false,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : false
-    })
+    $('#pending_reports').DataTable()
+    $('#guest_table').DataTable()
   })
 </script>
 </body>
