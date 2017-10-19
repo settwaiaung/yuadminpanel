@@ -404,7 +404,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
         <div class="box">
           <!-- /.box-header -->
           <div class="box-body">
-            <table id="approved_reports" class="table table-bordered table-hover">
+            <table id="restore_reports" class="table table-bordered table-hover">
               <thead>
                 <tr>
                   <th>Id</th>
@@ -680,14 +680,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
  <!-- page script -->
  <script>
   $(function () {
-    $('#approved_reports').DataTable({
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : false,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : false
-    })
+    $('#restore_reports').DataTable()
   })
 </script>
 </body>
