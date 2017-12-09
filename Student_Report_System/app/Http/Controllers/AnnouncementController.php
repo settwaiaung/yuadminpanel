@@ -45,7 +45,6 @@ class AnnouncementController extends Controller
     public function store(Request $request)
     {
         //
-
        $validated_data = $request->validate([
             'title' => 'required|min:1',
             'body'  => 'required|min:1',
@@ -69,6 +68,8 @@ class AnnouncementController extends Controller
     public function show($id)
     {
         //
+        $announcement = Announcement::findOrFail($id);
+        return view ('announcement.show' , compact('announcement'));
     }
 
     /**
@@ -80,6 +81,8 @@ class AnnouncementController extends Controller
     public function edit($id)
     {
         //
+        $announcement = Announcement::findOrFail($id);
+        return view('announcement.edit' , compact('announcement'));
     }
 
     /**
@@ -92,6 +95,10 @@ class AnnouncementController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $announcements =Announcement::findOrFail($id);
+        $announcements ->update($request->all());
+        return redirect()->route('announcement.index', compact('announcements'));
+        
     }
 
     /**
@@ -103,5 +110,8 @@ class AnnouncementController extends Controller
     public function destroy($id)
     {
         //
+        $id = Announcement::findOrFail($id);
+        $id->delete();
+        return redirect()->route('announcement.index')->with('success' , 'Deleted !');;
     }
 }
